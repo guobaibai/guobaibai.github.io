@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b13">
+  <meta name="description" content="Bright Tandem is a personal development project exploring intelligent agent systems, creative code, and algorithmic animation.">
+  <title>Bright Tandem — Intelligent Agent Systems &amp; Algorithmic Animation Lab</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background: #090b13; color: #f2f3f7; }
+    .display { letter-spacing: -.055em; }
+    .grid-glow { background-image: linear-gradient(rgba(147,159,188,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(147,159,188,.08) 1px, transparent 1px); background-size: 44px 44px; mask-image: linear-gradient(to bottom, transparent, black 25%, black 70%, transparent); }
+    .orb { background: radial-gradient(circle at 38% 32%, #e5d3ff 0%, #a998f0 7%, #7463c8 18%, #292943 43%, #0b0d17 70%); box-shadow: inset -20px -22px 60px #070910, 0 0 95px rgba(125, 102, 224, .24); }
+    .ring { border: 1px solid rgba(191,178,255,.25); transform: rotate(-22deg); }
+    .focus-card { background: linear-gradient(145deg, rgba(26,29,43,.92), rgba(14,16,26,.86)); transition: border-color .2s ease, transform .2s ease; }
+    .focus-card:hover { transform: translateY(-4px); border-color: rgba(177,159,255,.48); }
+    ::selection { background: #c8baff; color: #12111b; }
+    :focus-visible { outline: 2px solid #c8baff; outline-offset: 5px; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .focus-card { transition: none; } }
+  </style>
+</head>
+<body class="antialiased font-sans">
+  <div class="overflow-hidden">
+    <header class="relative z-10 mx-auto flex max-w-7xl items-center justify-between px-6 py-7 sm:px-10 lg:px-12">
+      <a href="#top" aria-label="Bright Tandem home" class="flex items-center gap-3 text-[15px] font-semibold tracking-[-.02em]">
+        <span aria-hidden="true" class="flex h-8 w-8 items-center justify-center rounded-full border border-violet-300/50"><span class="h-2 w-2 rounded-full bg-violet-300 shadow-[0_0_14px_#b6a5ff]"></span></span>
+        Bright Tandem<span class="text-violet-300">.</span>
+      </a>
+      <nav aria-label="Main navigation" class="flex items-center gap-6 text-sm text-slate-400 sm:gap-9">
+        <a class="transition hover:text-white" href="#focus">Focus</a>
+        <a class="transition hover:text-white" href="mailto:admin@brighttandem.com">Contact <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="relative mx-auto flex min-h-[680px] max-w-7xl items-center px-6 pb-24 pt-20 sm:px-10 lg:min-h-[720px] lg:px-12 lg:pb-32 lg:pt-24">
+        <div aria-hidden="true" class="grid-glow pointer-events-none absolute inset-0 opacity-60"></div>
+        <div aria-hidden="true" class="pointer-events-none absolute right-[-160px] top-14 h-[510px] w-[510px] opacity-60 sm:right-[-80px] lg:right-6 lg:top-12 lg:h-[620px] lg:w-[620px] lg:opacity-100">
+          <div class="orb absolute inset-[23%] rounded-full"></div>
+          <div class="ring absolute inset-[11%] rounded-full"></div>
+          <div class="ring absolute inset-[3%] rounded-full opacity-40"></div>
+          <div class="absolute left-[16%] top-[39%] h-2 w-2 rounded-full bg-violet-200 shadow-[0_0_18px_#d5caff]"></div>
+          <div class="absolute bottom-[19%] right-[25%] h-1.5 w-1.5 rounded-full bg-indigo-300 shadow-[0_0_14px_#b8aaff]"></div>
+        </div>
+        <div class="relative z-[1] max-w-3xl">
+          <p class="mb-7 flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[.24em] text-violet-300"><span class="h-px w-8 bg-violet-300"></span> Independent development project</p>
+          <h1 class="display max-w-3xl text-5xl font-medium leading-[1.03] sm:text-7xl lg:text-[5.5rem]">Ideas in motion.<br><span class="text-slate-500">Intelligence in tandem.</span></h1>
+          <p class="mt-8 max-w-xl text-lg leading-8 text-slate-300 sm:text-xl">Intelligent Agent Systems &amp; Algorithmic Animation Lab</p>
+          <p class="mt-4 max-w-lg text-base leading-7 text-slate-400">Exploring the intersection of intelligent workflows, creative code, and visual systems through practical experimentation.</p>
+          <div class="mt-10 flex flex-wrap items-center gap-6">
+            <a href="#focus" class="inline-flex items-center gap-5 rounded-full bg-violet-200 px-6 py-3.5 text-sm font-semibold text-[#141120] transition hover:bg-white">Explore the focus <span aria-hidden="true">↘</span></a>
+            <a href="mailto:admin@brighttandem.com" class="text-sm font-medium text-slate-300 transition hover:text-white">Get in touch <span aria-hidden="true" class="ml-1">↗</span></a>
+          </div>
+        </div>
+        <span aria-hidden="true" class="absolute bottom-9 right-6 hidden text-[10px] uppercase tracking-[.24em] text-slate-600 sm:block lg:right-12">Bright Tandem / 01</span>
+      </section>
+
+      <section id="focus" class="relative border-t border-white/10 bg-[#0c0e17] px-6 py-24 sm:px-10 lg:px-12 lg:py-32">
+        <div class="mx-auto max-w-7xl">
+          <div class="mb-12 flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
+            <div><p class="mb-4 text-[11px] font-semibold uppercase tracking-[.24em] text-violet-300">Areas of exploration</p><h2 class="display text-4xl font-medium sm:text-5xl">Core focus<span class="text-violet-300">.</span></h2></div>
+            <p class="max-w-sm text-sm leading-6 text-slate-400">From systems that help work flow to expressive digital experiences.</p>
+          </div>
+          <div class="grid gap-4 md:grid-cols-3">
+            <article class="focus-card flex min-h-[285px] flex-col rounded-2xl border border-white/10 p-7 sm:p-8">
+              <div class="mb-12 flex items-start justify-between"><span aria-hidden="true" class="flex h-11 w-11 items-center justify-center rounded-xl border border-violet-300/20 bg-violet-300/10 text-xl text-violet-200">✳</span><span class="text-xs text-slate-600">01 / SYSTEMS</span></div>
+              <h3 class="text-xl font-medium tracking-tight text-white">AI Workflow &amp; Agent Automation</h3>
+              <p class="mt-4 text-sm leading-7 text-slate-400">Designing and experimenting with agent-driven workflows that connect tasks, tools, and information.</p>
+            </article>
+            <article class="focus-card flex min-h-[285px] flex-col rounded-2xl border border-white/10 p-7 sm:p-8">
+              <div class="mb-12 flex items-start justify-between"><span aria-hidden="true" class="flex h-11 w-11 items-center justify-center rounded-xl border border-violet-300/20 bg-violet-300/10 font-mono text-lg text-violet-200">&lt;/&gt;</span><span class="text-xs text-slate-600">02 / CREATIVE CODE</span></div>
+              <h3 class="text-xl font-medium tracking-tight text-white">Code &amp; Visualization Scripting</h3>
+              <p class="mt-4 text-sm leading-7 text-slate-400">Using code to explore data, generate visuals, and bring algorithmic ideas to life through motion.</p>
+            </article>
+            <article class="focus-card flex min-h-[285px] flex-col rounded-2xl border border-white/10 p-7 sm:p-8">
+              <div class="mb-12 flex items-start justify-between"><span aria-hidden="true" class="flex h-11 w-11 items-center justify-center rounded-xl border border-violet-300/20 bg-violet-300/10 text-xl text-violet-200">◇</span><span class="text-xs text-slate-600">03 / BUILDING</span></div>
+              <h3 class="text-xl font-medium tracking-tight text-white">Full-Stack Prototyping</h3>
+              <p class="mt-4 text-sm leading-7 text-slate-400">Turning concepts into testable digital prototypes, from interface details to application logic.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="border-t border-white/10 px-6 py-24 sm:px-10 lg:px-12">
+        <div class="mx-auto flex max-w-7xl flex-col gap-8 sm:flex-row sm:items-end sm:justify-between">
+          <div><p class="mb-4 text-[11px] font-semibold uppercase tracking-[.24em] text-violet-300">Start a conversation</p><h2 class="display text-4xl font-medium sm:text-5xl">Have an idea in mind?</h2></div>
+          <a href="mailto:admin@brighttandem.com" class="group inline-flex w-fit items-center gap-6 border-b border-violet-300 pb-2 text-base text-slate-200 transition hover:text-white">admin@brighttandem.com <span aria-hidden="true" class="transition group-hover:translate-x-1 group-hover:-translate-y-1">↗</span></a>
+        </div>
+      </section>
+    </main>
+    <footer class="border-t border-white/10 px-6 py-8 sm:px-10 lg:px-12">
+      <div class="mx-auto flex max-w-7xl flex-col gap-3 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between"><p>© 2026 Bright Tandem. All rights reserved.</p><p>A personal development project · brighttandem.com</p></div>
+    </footer>
+  </div>
+</body>
+</html>
